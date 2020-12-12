@@ -147,3 +147,11 @@ set rtp+=/usr/local/opt/fzf
 " Line navigation
 nmap j gj
 nmap k gk
+
+" Text expander
+iabbrev zpb START<cr>Basic<cr>Front:<cr>Back:<cr>Tags: #AnkiTag<cr>END
+iabbrev zpc START<cr>Cloze<cr><cr>Tags: #AnkiTag<cr>END
+iabbrev ccopy Copyright 2013 Steve Losh, all rights reserved.
+
+
+
