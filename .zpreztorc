@@ -47,7 +47,8 @@ zstyle ':prezto:load' pmodule \
   'contrib-prompt' \
   'prompt' \
   'syntax-highlighting' \
-  'autosuggestions'
+  'autosuggestions' \
+  'tmux'
 #
 # Autosuggestions
 #
@@ -233,11 +234,3 @@ zstyle ':prezto:module:tmux:session' name 'jhw'
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 zstyle ':prezto:module:utility' safe-ops 'yes'
-
-
-#
-# Custom
-#
- 
-# theme
-# zstyle :prezto:module:prompt theme powerlevel10k
