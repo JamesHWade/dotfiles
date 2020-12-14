@@ -78,7 +78,7 @@ iabbrev zpc START<cr>Cloze<cr><cr>Tags: #AnkiTag<cr>END
 
 
 " Vim-one Theme
-let g:airline_theme='one'
+" let g:airline_theme='one'
 
 " Plugins
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -91,7 +91,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Atom One Dark / Light theme.
-Plug 'rakr/vim-one'
+" Plug 'rakr/vim-one'
 
 " Integrate fzf with Vim.
 Plug '~/.fzf'
@@ -104,10 +104,10 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 
 " Better manage Vim sessions.
-Plug 'tpope/vim-obsession'
+" Plug 'tpope/vim-obsession'
 
 " Zoom in and out of a specific split pane (similar to tmux).
-Plug 'dhruvasagar/vim-zoom'
+" Plug 'dhruvasagar/vim-zoom'
 
 " Pass focus events from tmux to Vim (useful for autoread and linting tools).
 "  Plug 'tmux-plugins/vim-tmux-focus-events'
@@ -165,14 +165,14 @@ Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 
 " Dim paragraphs above and below the active paragraph.
-Plug 'junegunn/limelight.vim'
+" Plug 'junegunn/limelight.vim'
 
 " Distraction free writing by removing UI elements and centering
 "  everything.
 Plug 'junegunn/goyo.vim'
 
 " A bunch of useful language related snippets (ultisnips is the engine).
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " Automatically show Vim's complete menu while typing.
 Plug 'vim-scripts/AutoComplPop'
