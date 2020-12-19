@@ -47,7 +47,8 @@ zstyle ':prezto:load' pmodule \
   'contrib-prompt' \
   'prompt' \
   'syntax-highlighting' \
-  'autosuggestions'
+  'autosuggestions' \
+  'tmux'
 #
 # Autosuggestions
 #
@@ -214,10 +215,10 @@ zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-zstyle ':prezto:module:tmux:auto-start' local 'yes'
+# zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
-zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+# zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Set the default session name:
 zstyle ':prezto:module:tmux:session' name 'jhw'
