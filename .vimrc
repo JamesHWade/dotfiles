@@ -183,6 +183,15 @@ Plug 'vim-scripts/AutoComplPop'
 " Colorizer
 Plug 'lilydjwg/colorizer'
 
+" Vim Wiki
+Plug 'vimwiki/vimwiki'
+
+" Terminux
+Plug 'wincent/terminus'
+
+" Nvim-R
+Plug 'jalvesaq/Nvim-R'
+
 " Languages and file types.
 Plug 'chrisbra/csv.vim'
 Plug 'godlygeek/tabular' | Plug 'tpope/vim-markdown'

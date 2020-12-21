@@ -314,10 +314,10 @@ background_opacity: 0.9
 #   - (Windows) powershell
 shell:
   program: /bin/zsh
-  args:
-    - -l
-    - -c
-    - "tmux"
+  # args:
+  #   - -l
+  #   - -c
+  #   - "tmux"
 
 # Startup directory
 #
