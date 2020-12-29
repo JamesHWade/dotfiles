@@ -1,13 +1,11 @@
+zmodload zsh/zprof
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 
 # Added for autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
@@ -46,10 +44,8 @@ if command -v pyenv 1>/dev/null 2>&1; then
 	  eval "$(pyenv init -)"
 fi
 
-# Big Sur pyenv fix
-
-# Solving problems with macOS Big Sur
-export PATH="/usr/local/opt/bzip2/bin:$PATH"
-export CPPFLAGS="-I$(brew --prefix zlib)/include -I$(brew --prefix bzip2)/include $CPPFLAGS"
-export CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix zlib)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include"
-export LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -L$(brew --prefix zlib)/lib -L$(brew --prefix bzip2)/lib"
+# # Big Sur pyenv fix
+# export PATH="/usr/local/opt/bzip2/bin:$PATH"
+# export CPPFLAGS="-I$(brew --prefix zlib)/include -I$(brew --prefix bzip2)/include $CPPFLAGS"
+# export CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix zlib)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include"
+# export LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -L$(brew --prefix zlib)/lib -L$(brew --prefix bzip2)/lib"
