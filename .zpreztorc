@@ -22,10 +22,10 @@ zstyle ':prezto:*:*' color 'yes'
 # zstyle ':prezto:load' pmodule-allow-overrides 'yes'
 
 # Set the Zsh modules to load (man zshmodules).
-# zstyle ':prezto:load' zmodule 'attr' 'stat'
+zstyle ':prezto:load' zmodule 'attr' 'stat'
 
 # Set the Zsh functions to load (man zshcontrib).
-# zstyle ':prezto:load' zfunction 'zargs' 'zmv'
+zstyle ':prezto:load' zfunction 'zargs' 'zmv'
 
 # Set the Prezto modules to load (browse modules).
 # The order matters.
@@ -47,7 +47,8 @@ zstyle ':prezto:load' pmodule \
   'contrib-prompt' \
   'prompt' \
   'syntax-highlighting' \
-  'autosuggestions'
+  'autosuggestions' \
+  'tmux'
 #
 # Autosuggestions
 #
@@ -55,13 +56,22 @@ zstyle ':prezto:load' pmodule \
 # Set the query found color.
 zstyle ':prezto:module:autosuggestions:color' found ''
 
+# bindkey '^ ' autosuggest-accept
+bindkey '`' autosuggest-accept
+
 #
 # Completions
 #
 
+# autoload compinit
+autoload -Uz compinit && compinit
+
+# partial completion suggestions
+# zstyle ':completion:*' list-suffixes zstyle ':completion:*' expand prefix suffix 
+
 # Set the entries to ignore in static */etc/hosts* for host completion.
-# zstyle ':prezto:module:completion:*:hosts' etc-host-ignores \
-#   '0.0.0.0' '127.0.0.1'
+zstyle ':prezto:module:completion:*:hosts' etc-host-ignores \
+  '0.0.0.0' '127.0.0.1'
 
 #
 # Editor
