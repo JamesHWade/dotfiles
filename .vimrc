@@ -183,6 +183,9 @@ Plug 'vim-scripts/AutoComplPop'
 " Colorizer
 Plug 'lilydjwg/colorizer'
 
+" Terminus (better cursor)
+Plug 'wincent/terminus'
+
 " Languages and file types.
 Plug 'chrisbra/csv.vim'
 Plug 'godlygeek/tabular' | Plug 'tpope/vim-markdown'

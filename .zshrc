@@ -10,7 +10,7 @@ fi
 
 
 # Added for autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh && . /usr/share/autojump/autojump.sh
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
