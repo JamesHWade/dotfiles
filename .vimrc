@@ -64,7 +64,11 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 " :let g:colorizer_auto_color = 1
 
 " Enable fzf (from Homebrew install)
-set rtp+=/usr/bin/fzf
+if has('mac')
+        set rtp+=/usr/local/opt/fzf
+elseif has('unix')
+	set rtp+=/usr/bin/fzf
+endif
 
 " Text Expansion
 iabbrev zpb START<cr>Basic<cr>Front:<cr>Back:<cr>Tags: #AnkiTag<cr>END
@@ -247,7 +251,7 @@ call plug#begin('~/.vim/plugged')
 " Plug 'rakr/vim-one'
 
 " Integrate fzf with Vim.
-Plug '~/.fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " Senisble defaults
@@ -359,5 +363,8 @@ Plug 'tpope/vim-git'
 Plug 'vim-python/python-syntax'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'elzr/vim-json'
+
+" Zettel-style plugins
+Plug 'michal-h21/vim-zettel'
 
 call plug#end()
