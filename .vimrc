@@ -340,6 +340,9 @@ Plug 'junegunn/goyo.vim'
 " Colorizer
 Plug 'lilydjwg/colorizer'
 
+" Terminus (better cursor)
+Plug 'wincent/terminus'
+
 " Vim Wiki
 Plug 'vimwiki/vimwiki'
 
