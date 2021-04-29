@@ -66,4 +66,10 @@ matches:
 
   # Obsidian PS2 Stand-Up
   - trigger: ":ps2"
-    replace: "# PS2 Weekly Stand-Up {{mydate}}\nAttendees: Yongcaho, Monica, Jian, Parth, Bea, Matt\n\n\n\n#PS2 #DataSteward #StandUp\n\nSee also: \n\n## Prompts
+    replace: "# PS2 Weekly Stand-Up {{mydate}}\nAttendees: Yongcaho, Monica, Jian, Parth, Bea, Matt\n\n\n\n#PS2 #DataSteward #StandUp\n\nSee also: \n\n## Prompts"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
