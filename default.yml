@@ -45,7 +45,7 @@ matches:
         type: date
         params:
           format: "%Y-%m-%d"
- 
+
   # Obsidian VRA-MQ Stand-up
   - trigger: ":vramq"
     replace: "# VRA-MQ Project Stand-up {{mydate}}\nAttendees: Lisa, Mikayla, Nick, Tori, Camila, Dave, Tom\n\n\n\n#VRAMQ #StandUp #Sync\n\nSee also: \n\n## Prompts"
@@ -54,7 +54,7 @@ matches:
         type: date
         params:
           format: "%Y-%m-%d"
- 
+
   # Obsidian Scale and Standards Stand-up
   - trigger: ":scale"
     replace: "# Scale & Standards Weekly Sync {{mydate}}\nAttendees: Mark, Joey, Meha, Kaytlin, Adam, Tim, Chris, Eric\n\n\n\n#AICC #AI #StandUp #Sync #ScaleStandards\nSee also: \n\n## Prompts"
@@ -66,4 +66,10 @@ matches:
 
   # Obsidian PS2 Stand-Up
   - trigger: ":ps2"
-    replace: "# PS2 Weekly Stand-Up {{mydate}}\nAttendees: Yongcaho, Monica, Jian, Parth, Bea, Matt\n\n\n\n#PS2 #DataSteward #StandUp\n\nSee also: \n\n## Prompts
+    replace: "# PS2 Weekly Stand-Up {{mydate}}\nAttendees: Yongcaho, Monica, Jian, Parth, Bea, Matt\n\n\n\n#PS2 #DataSteward #StandUp\n\nSee also: \n\n## Prompts"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
