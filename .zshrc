@@ -21,6 +21,7 @@ source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 alias pip=pip3
 alias python=python3
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
+alias r=radian
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -45,8 +46,4 @@ if command -v pyenv 1>/dev/null 2>&1; then
 	  eval "$(pyenv init -)"
 fi
 
-
 export PATH="/Library/Frameworks/R.framework/Resources:$PATH"
-
-alias r=radian
-
