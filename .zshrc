@@ -8,8 +8,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Added for autojump
-# [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh && . /usr/share/autojump/autojump.sh
-source /usr/share/autojump/autojump.sh
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh # && . /usr/share/autojump/autojump.sh
+# source /usr/share/autojump/autojump.sh
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -45,8 +45,8 @@ if command -v pyenv 1>/dev/null 2>&1; then
 	  eval "$(pyenv init -)"
 fi
 
-# # Big Sur pyenv fix
-# export PATH="/usr/local/opt/bzip2/bin:$PATH"
-# export CPPFLAGS="-I$(brew --prefix zlib)/include -I$(brew --prefix bzip2)/include $CPPFLAGS"
-# export CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix zlib)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include"
-# export LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -L$(brew --prefix zlib)/lib -L$(brew --prefix bzip2)/lib"
+
+export PATH="/Library/Frameworks/R.framework/Resources:$PATH"
+
+alias r=radian
+

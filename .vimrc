@@ -370,4 +370,6 @@ Plug 'elzr/vim-json'
 " Zettel-style plugins
 Plug 'michal-h21/vim-zettel'
 
+" RMarkdown Support
+Plug 'vim-pandoc/vim-rmarkdown'
 call plug#end()
