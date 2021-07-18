@@ -45,8 +45,4 @@ if command -v pyenv 1>/dev/null 2>&1; then
 	  eval "$(pyenv init -)"
 fi
 
-# # Big Sur pyenv fix
-# export PATH="/usr/local/opt/bzip2/bin:$PATH"
-# export CPPFLAGS="-I$(brew --prefix zlib)/include -I$(brew --prefix bzip2)/include $CPPFLAGS"
-# export CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix zlib)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include"
-# export LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -L$(brew --prefix zlib)/lib -L$(brew --prefix bzip2)/lib"
+export PATH=$PATH:/usr/local/go/bin
