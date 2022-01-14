@@ -6,15 +6,4 @@ hs.hotkey.bind({"option"}, "space", function()
     hs.application.launchOrFocus("/Applications/Alacritty.app")
   end
 end)
-hs.loadSpoon('ControlEscape'):start() -- Load Hammerspoon bits from https://github.com/jasonrudolph/ControlEscape.spoon
---- hs.loadSpoon('ClipboardTool'):bindHotkeys(
---- {
---- show_clipboard={{"ctrl", "shift"}, "C"},
---- toggle_clipboard={{"cmd"}, "V"}
---- })
---- hs.loadSpoon('ClipboardTool'):start()
-
---- hs.loadSpoon('WindowHalfsAndThirds')
---- spoon.WindowHalfsAndThirds:bindHotkeys(spoon.WindowHalfsAndThirds.defaultHotkeys)
-
---- hs.loadSpoon('Seal'):start()                  
+hs.loadSpoon('ControlEscape'):start() 

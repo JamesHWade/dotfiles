@@ -73,3 +73,12 @@ matches:
         params:
           format: "%Y-%m-%d"
 
+# Obsidian PS2 Stand-Up
+  - trigger: ":due"
+    replace: "📅{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
