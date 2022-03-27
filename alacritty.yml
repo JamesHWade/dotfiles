@@ -63,7 +63,8 @@ colors:
     cyan:    '#89ddff'
     white:   '#ffffff'  # Arbitrary
 
-background_opacity: 0.9
+window:
+  opacity: 0.9
 
 cursor:
   # Cursor style
@@ -104,7 +105,7 @@ shell:
   args:
     - -l
     - -c
-    - "tmux"
+    - "tmux attach || tmux"
 
 # Startup directory
 #

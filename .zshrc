@@ -24,6 +24,12 @@ alias r=radian
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # nvm
-# source ~/.nvm/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+
+# set default editor to vim
+export VISUAL=vim
+export EDITOR="$VISUAL"

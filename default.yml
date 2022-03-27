@@ -73,7 +73,7 @@ matches:
         params:
           format: "%Y-%m-%d"
 
-# Obsidian PS2 Stand-Up
+  # Insert due date
   - trigger: ":due"
     replace: "📅{{mydate}}"
     vars:
@@ -82,3 +82,20 @@ matches:
         params:
           format: "%Y-%m-%d"
 
+  # Insert scheduled date
+  - trigger: ":sch"
+    replace: "⌛️{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d" 
+
+  # Insert completion date
+  - trigger: ":comp"
+    replace: "✅{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
