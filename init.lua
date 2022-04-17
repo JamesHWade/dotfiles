@@ -18,8 +18,8 @@ hs.hotkey.bind({"cmd", "alt"}, "N", function()
   end
 end)
 
--- vscode shortcut <cmd> + <alt> + <C>
-hs.hotkey.bind({"cmd", "alt"}, "C", function()
+-- vscode shortcut <cmd> + <alt> + <V>
+hs.hotkey.bind({"cmd", "alt"}, "V", function()
   local code = hs.application.get('code')
   if (code ~= nil and code:isFrontmost()) then
     code:hide()
@@ -38,5 +38,34 @@ hs.hotkey.bind({"cmd", "alt"}, "R", function()
   end
 end)
 
+-- Teams shortcut <cmd> + <alt> + <T>
+hs.hotkey.bind({"cmd", "alt"}, "T", function()
+  local code = hs.application.get('teams')
+  if (code ~= nil and code:isFrontmost()) then
+    code:hide()
+  else
+    hs.application.launchOrFocus("/Applications/Microsoft Teams.app")
+  end
+end)
+
+-- outlook shortcut <cmd> + <alt> + <O>
+hs.hotkey.bind({"cmd", "alt"}, "O", function()
+  local code = hs.application.get('outlook')
+  if (code ~= nil and code:isFrontmost()) then
+    code:hide()
+  else
+    hs.application.launchOrFocus("/Applications/Microsoft Outlook.app")
+  end
+end)
+
+-- chrome shortcut <cmd> + <alt> + <C>
+hs.hotkey.bind({"cmd", "alt"}, "C", function()
+  local code = hs.application.get('chrome')
+  if (code ~= nil and code:isFrontmost()) then
+    code:hide()
+  else
+    hs.application.launchOrFocus("/Applications/Google Chrome.app")
+  end
+end)
 
 hs.loadSpoon('ControlEscape'):start() 
