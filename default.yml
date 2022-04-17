@@ -84,7 +84,7 @@ matches:
 
   # Insert scheduled date
   - trigger: ":sch"
-    replace: "⌛️ {{mydate}}"
+    replace: "⏳{{mydate}}"
     vars:
       - name: mydate
         type: date
