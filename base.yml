@@ -1,0 +1,104 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+  # Simple text replacement
+  - trigger: ":espanso"
+    replace: "Hi there!"
+
+  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
+
+  # But matches can also be dynamic:
+
+  # Print the current date
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  # Print the output of a shell command
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo 'Hello from your shell'"
+
+  # Anki: New Cloze Note
+  - trigger: ":clz"
+    replace: "START\nCloze\n\nTags: #AnkiTag\nEND"
+
+  # Obsidian Fast Stand-up
+  - trigger: ":fst"
+    replace: "# Fast Project Stand-up {{mydate}}\nAttendees: Paul, Peter, Jordan, John, Kyle, Tomas\n\n\n\n#FAST #DataScience #AI #DataSteward #StandUp #Sync\n\nSee also: \n\n## Prompts"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  # Obsidian VRA-MQ Stand-up
+  - trigger: ":vramq"
+    replace: "# VRA-MQ Project Stand-up {{mydate}}\nAttendees: Lisa, Mikayla, Nick, Tori, Camila, Dave, Tom\n\n\n\n#VRAMQ #StandUp #Sync\n\nSee also: \n\n## Prompts"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  # Obsidian Scale and Standards Stand-up
+  - trigger: ":scale"
+    replace: "# Scale & Standards Weekly Sync {{mydate}}\nAttendees: Mark, Joey, Meha, Kaytlin, Adam, Tim, Chris, Eric\n\n\n\n#AICC #AI #StandUp #Sync #ScaleStandards\nSee also: \n\n## Prompts"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  # Obsidian PS2 Stand-Up
+  - trigger: ":ps2"
+    replace: "# PS2 Weekly Stand-Up {{mydate}}\nAttendees: Yongchao, Monica, Jian, Parth, Bea, Matt\n\n\n\n#PS2 #DataSteward #StandUp\n\nSee also: \n\n## Prompts"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  # Insert due date
+  - trigger: ":due"
+    replace: "📅 {{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  # Insert scheduled date
+  - trigger: ":sch"
+    replace: "⏳ {{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d" 
+
+  # Insert completion date
+  - trigger: ":comp"
+    replace: "✅ {{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+  # And much more! For more information, visit the docs: https://espanso.org/docs/
+
