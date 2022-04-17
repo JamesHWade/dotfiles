@@ -67,7 +67,7 @@ bindkey '`' autosuggest-accept
 autoload -Uz compinit && compinit
 
 # partial completion suggestions
-# zstyle ':completion:*' list-suffixes zstyle ':completion:*' expand prefix suffix 
+# zstyle ':completion:*' list-suffixeszstyle ':completion:*' expand prefix suffix
 
 # Set the entries to ignore in static */etc/hosts* for host completion.
 zstyle ':prezto:module:completion:*:hosts' etc-host-ignores \

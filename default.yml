@@ -75,7 +75,7 @@ matches:
 
   # Insert due date
   - trigger: ":due"
-    replace: "📅{{mydate}}"
+    replace: "📅 {{mydate}}"
     vars:
       - name: mydate
         type: date
@@ -84,7 +84,7 @@ matches:
 
   # Insert scheduled date
   - trigger: ":sch"
-    replace: "⌛️{{mydate}}"
+    replace: "⌛️ {{mydate}}"
     vars:
       - name: mydate
         type: date
@@ -93,7 +93,7 @@ matches:
 
   # Insert completion date
   - trigger: ":comp"
-    replace: "✅{{mydate}}"
+    replace: "✅ {{mydate}}"
     vars:
       - name: mydate
         type: date

@@ -28,7 +28,7 @@ hs.hotkey.bind({"cmd", "alt"}, "V", function()
   end
 end)
 
--- rstudio shortcut <cmd> + <alt> + <C>
+-- rstudio shortcut <cmd> + <alt> + <R>
 hs.hotkey.bind({"cmd", "alt"}, "R", function()
   local code = hs.application.get('rstudio')
   if (code ~= nil and code:isFrontmost()) then
