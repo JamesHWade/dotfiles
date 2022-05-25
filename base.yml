@@ -23,7 +23,7 @@ matches:
       - name: mydate
         type: date
         params:
-          format: "%m/%d/%Y"
+          format: "%Y-%m-%d"
 
   # Print the output of a shell command
   - trigger: ":shell"
@@ -56,25 +56,7 @@ matches:
         params:
           format: "%Y-%m-%d"
 
-  # Obsidian Scale and Standards Stand-up
-  - trigger: ":scale"
-    replace: "# Scale & Standards Weekly Sync {{mydate}}\nAttendees: Mark, Joey, Meha, Kaytlin, Adam, Tim, Chris, Eric\n\n\n\n#AICC #AI #StandUp #Sync #ScaleStandards\nSee also: \n\n## Prompts"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%Y-%m-%d"
-
-  # Obsidian PS2 Stand-Up
-  - trigger: ":ps2"
-    replace: "# PS2 Weekly Stand-Up {{mydate}}\nAttendees: Yongchao, Monica, Jian, Parth, Bea, Matt\n\n\n\n#PS2 #DataSteward #StandUp\n\nSee also: \n\n## Prompts"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%Y-%m-%d"
-
-  # Insert due date
+    # Insert due date
   - trigger: ":due"
     replace: "📅 {{mydate}}"
     vars:
@@ -100,5 +82,25 @@ matches:
         type: date
         params:
           format: "%Y-%m-%d"
-  # And much more! For more information, visit the docs: https://espanso.org/docs/
+ 
+  # Hi priority
+  - trigger: ":high"
+    replace: "⏫"
 
+  # Med priority
+  - trigger: ":med"
+    replace: "🔼"
+
+  # Low priority
+  - trigger: ":low"
+    replace: "🔽"
+
+  # Green
+  - trigger: ";;g"
+    replace: "🟩"
+  # Yellow
+  - trigger: ";;y"
+    replace: "🟨"
+  # Red
+  - trigger: ";;r"
+    replace: "🟥"
