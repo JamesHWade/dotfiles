@@ -63,15 +63,9 @@ colors:
     white:   '#ffffff'  # Arbitrary
 
 window:
-  opacity: 0.9
+  opacity: 0.95
 
 cursor:
-  # Cursor style
-  #
-  # Values for `style`:
-  #   - ▇ Block
-  #   - _ Underline
-  #   - | Beam
   style: Block
 
   # Vi mode cursor style
@@ -122,7 +116,7 @@ key_bindings:
   - { key: PageDown,  mods: Shift,   mode: ~Alt, action: ScrollPageDown }
   - { key: Home,      mods: Shift,   mode: ~Alt, action: ScrollToTop,   }
   - { key: End,       mods: Shift,   mode: ~Alt, action: ScrollToBottom }
-
+  - { key: T,         mods: Command,             action: CreateNewWindow }
   # Vi Mode
   #- { key: Space,  mods: Shift|Control, mode: Vi, action: ScrollToBottom          }
   #- { key: Space,  mods: Shift|Control,           action: ToggleViMode            }

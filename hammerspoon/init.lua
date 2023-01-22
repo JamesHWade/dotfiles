@@ -1,10 +1,10 @@
- -- iterm shortcut <option> + <space>
+ -- Alacritty shortcut <option> + <space>
 hs.hotkey.bind({"option"}, "space", function()
-  local iterm = hs.application.get('iterm')
+  local iterm = hs.application.get('Alacritty')
   if (iterm ~= nil and iterm:isFrontmost()) then
     iterm:hide()
   else
-    hs.application.launchOrFocus("/Applications/iTerm.app")
+    hs.application.launchOrFocus("/Applications/Alacritty.app")
   end
 end)
 
