@@ -84,15 +84,15 @@ matches:
           format: "%Y-%m-%d"
  
   # Hi priority
-  - trigger: ":high"
+  - trigger: ";;high"
     replace: "⏫"
 
   # Med priority
-  - trigger: ":med"
+  - trigger: ";;med"
     replace: "🔼"
 
   # Low priority
-  - trigger: ":low"
+  - trigger: ";;low"
     replace: "🔽"
 
   # Green
@@ -104,3 +104,9 @@ matches:
   # Red
   - trigger: ";;r"
     replace: "🟥"
+  # Project Personal
+  - trigger: ";;pp"
+    replace: "[Project::Personal]"
+  # Project Personal
+  - trigger: ";;pcds"
+    replace: "[Project::CDS]"
