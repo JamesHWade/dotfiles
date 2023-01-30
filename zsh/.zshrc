@@ -82,7 +82,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(ag brew fzf colored-man-pages git macos magic-enter
-       	zsh-autosuggestions zsh-syntax-highlighting z)
+       	zsh-autosuggestions zsh-syntax-highlighting zsh-vi-mode z)
 
 source $ZSH/oh-my-zsh.sh
 

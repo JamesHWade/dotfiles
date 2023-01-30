@@ -82,7 +82,7 @@ matches:
         type: date
         params:
           format: "%Y-%m-%d"
- 
+
   # Hi priority
   - trigger: ";;high"
     replace: "⏫"
@@ -104,9 +104,24 @@ matches:
   # Red
   - trigger: ";;r"
     replace: "🟥"
+
+# Project Autocompletes
   # Project Personal
   - trigger: ";;pp"
     replace: "[Project::Personal]"
-  # Project Personal
+  - trigger: ";;pcom"
+    replace: "[Project::Community]"
+  - trigger: ";;pcon"
+    replace: "[Project::Constitution]"
+  - trigger: ";;pcraft"
+    replace: "[Project::Craft]"
+  - trigger: ";;pcont"
+    replace: "[Project::Contemplation]"
   - trigger: ";;pcds"
     replace: "[Project::CDS]"
+  - trigger: ";;pmeas"
+    replace: "[Project::Measure]"
+  - trigger: ";;pdss"
+    replace: "[Project::DSS4AS]"
+
+
