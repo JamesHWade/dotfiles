@@ -1,18 +1,9 @@
 # espanso match file
 
-# For a complete introduction, visit the official docs at: https://espanso.org/docs/
-
-# You can use this file to define the base matches (aka snippets)
-# that will be available in every application when using espanso.
-
-# Matches are substitution rules: when you type the "trigger" string
-# it gets replaced by the "replace" string.
 matches:
   # Simple text replacement
   - trigger: ":espanso"
     replace: "Hi there!"
-
-  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
 
   # But matches can also be dynamic:
 
@@ -38,25 +29,6 @@ matches:
   - trigger: ":clz"
     replace: "START\nCloze\n\nTags: #AnkiTag\nEND"
 
-  # Obsidian Fast Stand-up
-  - trigger: ":fst"
-    replace: "# Fast Project Stand-up {{mydate}}\nAttendees: Paul, Peter, Jordan, John, Kyle, Tomas\n\n\n\n#FAST #DataScience #AI #DataSteward #StandUp #Sync\n\nSee also: \n\n## Prompts"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%Y-%m-%d"
-
-  # Obsidian VRA-MQ Stand-up
-  - trigger: ":vramq"
-    replace: "# VRA-MQ Project Stand-up {{mydate}}\nAttendees: Lisa, Mikayla, Nick, Tori, Camila, Dave, Tom\n\n\n\n#VRAMQ #StandUp #Sync\n\nSee also: \n\n## Prompts"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%Y-%m-%d"
-
-    # Insert due date
   - trigger: ":due"
     replace: "📅 {{mydate}}"
     vars:
@@ -124,4 +96,12 @@ matches:
   - trigger: ";;pdss"
     replace: "[Project::DSS4AS]"
 
+  # Insert food diary template
+  - trigger: ";;food"
+    replace: "## {{mydate}}\n\n### Breakfast\n\n- Athletic Greens\n- Coffee\n\n\n### Lunch\n\n### Snack\n\n### Dinner\n\n### Supplements & Meds\n\n- 500 mg krill oil\n- Two drops of Vitamin D\n- 20 mg Rosuvastatin\n"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
 
