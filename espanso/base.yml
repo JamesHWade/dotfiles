@@ -98,7 +98,7 @@ matches:
 
   # Insert food diary template
   - trigger: ";;food"
-    replace: "## {{mydate}}\n\n### Breakfast\n\n- Athletic Greens\n- Coffee\n\n\n### Lunch\n\n### Snack\n\n### Dinner\n\n### Supplements & Meds\n\n- 500 mg krill oil\n- Two drops of Vitamin D\n- 20 mg Rosuvastatin\n"
+    replace: "## {{mydate}}\n\n### Breakfast\n\n- Athletic Greens\n- Coffee\n- Oatmeal with flax seed meal and raw honey\n- Fruit (strawberries, blueberries, blackberries, grapes)\n\n\n### Lunch\n\n### Snack\n\n### Dinner\n\n### Supplements & Meds\n\n- 1000 mg krill oil\n- Two drops of Vitamin D\n- 20 mg Rosuvastatin\n- 300 mg CoQ10\n- 400 mg Magnesium"
     vars:
       - name: mydate
         type: date
